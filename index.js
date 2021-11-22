@@ -24,10 +24,22 @@ $('#berries').click( () => {
 
             }
 
+            else {
+
+                $('.next').css('display', 'none') 
+
+            }
+
         if ( data.previous !== null) {
 
                 $('.previous').css('display', 'block')
                 $('.previous').attr('onclick', 'clickprevious("' +data.previous+ '")')
+
+            }
+
+            else {
+
+                $('.previous').css('display', 'none') 
 
             }
 
@@ -53,7 +65,7 @@ function more_info_berry(url) {
 
 }
 
-function next(url) {
+function clicknext(url) {
 
     $.get(url, function(data) {
         
@@ -77,6 +89,12 @@ function next(url) {
 
         }
 
+        else {
+
+            $('.next').css('display', 'none') 
+
+        }
+
         if ( data.previous !== null) {
 
             $('.previous').css('display', 'block')
@@ -84,11 +102,17 @@ function next(url) {
 
         }
 
+        else {
+
+            $('.previous').css('display', 'none') 
+
+        }
+
     })
 
 }
 
-function previous(url) {
+function clickprevious(url) {
 
     $.get(url, function(data) {
         
@@ -112,10 +136,22 @@ function previous(url) {
 
         }
 
+        else {
+
+            $('.next').css('display', 'none') 
+
+        }
+
         if ( data.previous !== null) {
 
             $('.previous').css('display', 'block')
             $('.previous').attr('onclick', 'clickprevious("' +data.previous+ '")')
+
+        }
+
+        else {
+
+            $('.previous').css('display', 'none') 
 
         }
 
