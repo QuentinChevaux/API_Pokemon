@@ -11,13 +11,14 @@
 body {
 
     background-image: url(./image/body_background.png);
+    background-repeat: no-repeat;
 
 }
 
 .flex {
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
@@ -25,6 +26,7 @@ body {
 
     font-family: 'Pokemon Solid';
     font-size: 30px;
+    text-shadow: 4px 4px #0A285F;
 
     color: #FFCC00;
     background-color: #0062B1;
@@ -34,5 +36,71 @@ body {
 
     border-radius: 25px;
     border: 3px solid #0A285F;
+
+    transition: 200ms ease-out;
+
+}
+
+.menu div:hover {
+
+    transform: translateY(-5px);
+    transition: 200ms ease-in;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+    cursor: pointer;
+}
+
+#div_1, #div_2 {
+
+    display: none;
+
+    margin-top: 50px !important;
+    width: 75%;
+    margin: auto;
+
+    padding: 0 35px;
+    height: 300px;
+
+    background-color: #0062B1;
+    color: #FFCC00;
+    font-family: 'Pokemon Solid';
+    font-size: 35px;
+
+    overflow-y: scroll;
+
+    border-radius: 25px;
+}
+
+#div_2 {
+
+    overflow-y: hidden;
+
+}
+
+#pokemon_id {
+
+    width: 50%;
+    cursor: pointer;
+
+}
+
+#pokemon_name {
+
+    width: 50%;
+    text-align: right;
+    cursor: pointer;
+    text-transform: capitalize;
+
+}
+
+.div_hard_berry:not(:first-child) {
+
+    margin-top: -100px;
+
+}
+
+.previous, .next {
+
+    display: none;
 
 }
