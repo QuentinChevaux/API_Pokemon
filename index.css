@@ -72,6 +72,7 @@ body {
 
     background-color: #0062B1;
     color: #FFCC00;
+    text-shadow: 4px 4px #0A285F;
     font-family: 'Pokemon Solid';
     font-size: 35px;
 
@@ -104,7 +105,7 @@ body {
 
 .div_hard_berry:not(:first-child) {
 
-    margin-top: -100px;
+   margin-top: -100px;
 
 }
 
@@ -118,5 +119,12 @@ i {
 
     font-size: 70px;
     color: #FFCC00;
+
+    margin: 0 20px;
+
+    border: 3px solid #0A285F;
+    border-radius: 50%;
+
+    text-shadow: 4px 4px #0A285F;
 
 }
